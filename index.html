@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!--  Page Title -->
+  <meta charset="UTF-8">
   <title>RINSE</title>
+ <!-- Required meta tags -->
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- FONTS  -->
-  <style>
-    @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
-  </style>
+ <!--  Page Title -->
+ <title>RINSE</title>
 
-  <!-- BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
+ <!-- FONTS  -->
+ <style>
+   @import url('https://fonts.googleapis.com/css?family=Comfortaa:400,700');
+ </style>
 
-  <!-- Page CSS -->
-  <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" />
+ <!-- BOOTSTRAP CSS -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+   crossorigin="anonymous">
 
-</head>
-
+ <!-- Page CSS -->
+ <link rel="stylesheet" type="text/css" media="screen" href="styles/main.css" /></head>
 <body>
-  <!-- Container start -->
-  <div class="container justify-content-center text-center">
-
-    <!-- RINSE LOGO -->
-    <div class="hero col-md-12">
-      <img src="./images/Rinse logo copy.png" alt="Responsive Image" class="img-fluid" id="hero_or">
-      <h3 class=""> 305 Shrewsbury Street, Worcester MA 01604</h3>
+  <!-- HEADER -->
+  <header class="site-header">
+    <img src="./images/Rinse logo copy.png" alt="Responsive Image" class="site-logo">
+    <button onclick="openModal()" class="open-modal-button">
+      Open Directions
+    </button>
+    <div class="info-section">
+      <h4>It's different at RINSE.</h4>
+      <p>Select a stylist above to be directed to her webpage<br> for pricing and booking information.</p>
+      <p>Our hours of operation vary based on each stylist's schedule.</p>
+      <p>We understand this is a different approach and appreciate your understanding and willingness<br> to help our businesses grow.</p>
     </div>
+  </header>
 
-
+  <!-- MAIN CONTENT -->
+  <main>
     <!-- User/Titles -->
-    <div class="titles">
-      <div class="titles titles__users__box">
-        <h2 class="titles user--mod"><a href="http://soniadigioia.com">Sonia DiGiola</a></h2>
-
-        <h2 class="titles user--mod">
-          <a href="http://prettybyjo.net">Jo-Serena Rodriguez</a>
-        </h2>
+    <section class="bio-columns">
+      <div class="bio">
+        <h3 class="bio__name">Sonia DiGiola</h3>
+        <ul class="bio__links">
+          <li><a href="http://soniadigioia.com"> Website</a></li>
+          <li><a href="https://www.instagram.com/digioia.sonia"><svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 503.84 503.84">
+            <path d="M251.92 45.39c67.27 0 75.23.26 101.8 1.47 24.56 1.12 37.9 5.22 46.78 8.67a78 78 0 0129 18.85 78 78 0 0118.85 29c3.45 8.88 7.55 22.22 8.67 46.78 1.21 26.57 1.47 34.53 1.47 101.8s-.26 75.23-1.47 101.8c-1.12 24.56-5.22 37.9-8.67 46.78a83.51 83.51 0 01-47.81 47.81c-8.88 3.45-22.22 7.55-46.78 8.67-26.56 1.21-34.53 1.47-101.8 1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78 78 0 01-29-18.85 78 78 0 01-18.85-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23 1.47-101.8c1.12-24.56 5.22-37.9 8.67-46.78a78 78 0 0118.85-29 78 78 0 0129-18.85c8.88-3.45 22.22-7.55 46.78-8.67 26.57-1.21 34.53-1.47 101.8-1.47m0-45.39c-68.42 0-77 .29-103.87 1.52S102.92 7 86.92 13.22a123.68 123.68 0 00-44.64 29.06 123.68 123.68 0 00-29.06 44.64c-6.22 16-10.48 34.34-11.7 61.15S0 183.5 0 251.92s.29 77 1.52 103.87 5.48 45.13 11.7 61.13a123.68 123.68 0 0029.06 44.62 123.52 123.52 0 0044.64 29.07c16 6.23 34.34 10.49 61.15 11.71s35.45 1.52 103.87 1.52 77-.29 103.87-1.52 45.11-5.48 61.11-11.71a128.74 128.74 0 0073.69-73.69c6.23-16 10.49-34.34 11.71-61.15s1.52-35.45 1.52-103.87-.29-77-1.52-103.87-5.48-45.11-11.71-61.11a123.52 123.52 0 00-29.05-44.62 123.68 123.68 0 00-44.64-29.08c-16-6.22-34.34-10.48-61.15-11.7S320.34 0 251.92 0z"></path>
+            <path d="M251.92 122.56a129.36 129.36 0 10129.36 129.36 129.35 129.35 0 00-129.36-129.36zm0 213.36a84 84 0 1184-84 84 84 0 01-84 84z"></path>
+            <circle cx="386.4" cy="117.44" r="30.23"></circle>
+          </svg> Instagram</a></li>
+        </ul>
       </div>
-    </div>
-
-    <!-- Body/Info -->
-    <div class="info">
-      <div class="info__body lead">
-        <h4>It's different at RINSE.</h4>
-        <p>Select a stylist above to be directed her webpage </br> for pricing and booking information.</p>
-        <br>
-        <p>Our hours of operation vary based on each stylist's schedule.</p>
-        <br>
-        <p>We understand this is a different approach and appreciate your understanding and willingness</br> to help our businesses
-          grow.
-        </p>
+      <div class="bio">
+        <h3 class="bio__name">Jo-Serena Rodriguez</h3>
+        <ul class="bio__links">
+          <li><a href="http://prettybyjo.com/booknow">Book</a></li>
+          <li><a href="http://prettybyjo.com"> Website</a></li>
+          <li><a href="https://www.instagram.com/prettybyjo/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 503.84 503.84">
+            <path d="M251.92 45.39c67.27 0 75.23.26 101.8 1.47 24.56 1.12 37.9 5.22 46.78 8.67a78 78 0 0129 18.85 78 78 0 0118.85 29c3.45 8.88 7.55 22.22 8.67 46.78 1.21 26.57 1.47 34.53 1.47 101.8s-.26 75.23-1.47 101.8c-1.12 24.56-5.22 37.9-8.67 46.78a83.51 83.51 0 01-47.81 47.81c-8.88 3.45-22.22 7.55-46.78 8.67-26.56 1.21-34.53 1.47-101.8 1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78 78 0 01-29-18.85 78 78 0 01-18.85-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23 1.47-101.8c1.12-24.56 5.22-37.9 8.67-46.78a78 78 0 0118.85-29 78 78 0 0129-18.85c8.88-3.45 22.22-7.55 46.78-8.67 26.57-1.21 34.53-1.47 101.8-1.47m0-45.39c-68.42 0-77 .29-103.87 1.52S102.92 7 86.92 13.22a123.68 123.68 0 00-44.64 29.06 123.68 123.68 0 00-29.06 44.64c-6.22 16-10.48 34.34-11.7 61.15S0 183.5 0 251.92s.29 77 1.52 103.87 5.48 45.13 11.7 61.13a123.68 123.68 0 0029.06 44.62 123.52 123.52 0 0044.64 29.07c16 6.23 34.34 10.49 61.15 11.71s35.45 1.52 103.87 1.52 77-.29 103.87-1.52 45.11-5.48 61.11-11.71a128.74 128.74 0 0073.69-73.69c6.23-16 10.49-34.34 11.71-61.15s1.52-35.45 1.52-103.87-.29-77-1.52-103.87-5.48-45.11-11.71-61.11a123.52 123.52 0 00-29.05-44.62 123.68 123.68 0 00-44.64-29.08c-16-6.22-34.34-10.48-61.15-11.7S320.34 0 251.92 0z"></path>
+            <path d="M251.92 122.56a129.36 129.36 0 10129.36 129.36 129.35 129.35 0 00-129.36-129.36zm0 213.36a84 84 0 1184-84 84 84 0 01-84 84z"></path>
+            <circle cx="386.4" cy="117.44" r="30.23"></circle>
+          </svg>Instagram</a></li>
+        </ul>
       </div>
-    </div>
-  </div>
-
-  <!-- Scripts/Necessary Plugins -->
-  <script src="main.js"></script>
-
-
-  <!-- BOOTSTRAP REQUIRMENTS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-    crossorigin="anonymous"></script>
+      <div class="bio">
+        <h3 class="bio__name">Tianna</h3>
+        <ul class="bio__links">
+          <li><a href="https://book.squareup.com/appointments/l02wa3sp5ek2jz/location/LF8EF61DB44M4/services?buttonTextColor=000000&color=eed6d3&locale=en&referrer=so">Book</a></li>
+          <li><a href="https://www.instagram.com/tiannadoeshair/"> <svg xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 503.84 503.84">
+            <path d="M251.92 45.39c67.27 0 75.23.26 101.8 1.47 24.56 1.12 37.9 5.22 46.78 8.67a78 78 0 0129 18.85 78 78 0 0118.85 29c3.45 8.88 7.55 22.22 8.67 46.78 1.21 26.57 1.47 34.53 1.47 101.8s-.26 75.23-1.47 101.8c-1.12 24.56-5.22 37.9-8.67 46.78a83.51 83.51 0 01-47.81 47.81c-8.88 3.45-22.22 7.55-46.78 8.67-26.56 1.21-34.53 1.47-101.8 1.47s-75.24-.26-101.8-1.47c-24.56-1.12-37.9-5.22-46.78-8.67a78 78 0 01-29-18.85 78 78 0 01-18.85-29c-3.45-8.88-7.55-22.22-8.67-46.78-1.21-26.57-1.47-34.53-1.47-101.8s.26-75.23 1.47-101.8c1.12-24.56 5.22-37.9 8.67-46.78a78 78 0 0118.85-29 78 78 0 0129-18.85c8.88-3.45 22.22-7.55 46.78-8.67 26.57-1.21 34.53-1.47 101.8-1.47m0-45.39c-68.42 0-77 .29-103.87 1.52S102.92 7 86.92 13.22a123.68 123.68 0 00-44.64 29.06 123.68 123.68 0 00-29.06 44.64c-6.22 16-10.48 34.34-11.7 61.15S0 183.5 0 251.92s.29 77 1.52 103.87 5.48 45.13 11.7 61.13a123.68 123.68 0 0029.06 44.62 123.52 123.52 0 0044.64 29.07c16 6.23 34.34 10.49 61.15 11.71s35.45 1.52 103.87 1.52 77-.29 103.87-1.52 45.11-5.48 61.11-11.71a128.74 128.74 0 0073.69-73.69c6.23-16 10.49-34.34 11.71-61.15s1.52-35.45 1.52-103.87-.29-77-1.52-103.87-5.48-45.11-11.71-61.11a123.52 123.52 0 00-29.05-44.62 123.68 123.68 0 00-44.64-29.08c-16-6.22-34.34-10.48-61.15-11.7S320.34 0 251.92 0z"></path>
+            <path d="M251.92 122.56a129.36 129.36 0 10129.36 129.36 129.35 129.35 0 00-129.36-129.36zm0 213.36a84 84 0 1184-84 84 84 0 01-84 84z"></path>
+            <circle cx="386.4" cy="117.44" r="30.23"></circle>
+          </svg>Instagram</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+      <!-- Directions Modal -->
+      <div id="directionsModal" class="modal">
+        <div class="modal-content">
+          <iframe
+            loading="lazy"
+            allowfullscreen
+            src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJoVRL-zsG5IkRGgdb8FBeves&key=AIzaSyBgnPjHYKxASWoy6kBYbTpVuoqtK8GIYHE">
+          </iframe>
+          <p>305 Shrewsbury Street, Worcester MA 01604</p>
+          <button class="close-modal" onclick="closeModal()">Close</button>
+        </div>
+      </div>
+      <script src="main.js"></script>
 </body>
-
 </html>
